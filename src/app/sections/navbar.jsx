@@ -4,7 +4,7 @@ import Contact from "@/app/images/contact.svg";
 import Contact2 from "@/app/images/contact2.svg"
 const Navbar = () => {
   return (
-    <div className="container mx-auto border-b border-gray-200 bg-white shadow-sm w-full py-4">
+    <div className="mx-auto border-b border-gray-200 bg-white shadow-sm w-full py-4">
       {/* Top Section */}
       <div className="flex justify-between items-center px-4">
         {/* Logo and Links */}
