@@ -57,7 +57,7 @@ const Feature = () => {
             key={index}
             className={twMerge(
               "flex flex-col lg:flex-row items-center bg-[#F5F5F5] shadow-md p-6 rounded-lg",
-              index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
+              index % 2 === 0 ? "lg:flex-row-reverse" : "lg:flex-row"
             )}
           >
             <Image
