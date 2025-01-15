@@ -41,7 +41,7 @@ export const members = [
 const Feature = () => {
   return (
     <section className="flex flex-col items-center text-center py-12 px-4 sm:px-6 lg:px-8 bg-white">
-      <h1 className="text-3xl sm:text-2xl font-bold text-gray-900 mb-8">
+      <h1 className="text-4xl sm:text-3xl font-bold text-gray-900 mb-2">
         Create Research Posters In Minutes.
       </h1>
       <p className="mb-8 text-lg text-gray-700">
