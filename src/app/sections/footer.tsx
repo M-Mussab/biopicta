@@ -16,7 +16,7 @@ const Footer = () => {
           <div className="mt-10 mb-2">
             <Image src={Biopicta} alt="Biopicta" />
           </div>
-          <div className="max-w-sm text-sm">
+          <div className="max-w-sm text-white text-sm">
             <p>
               Our mission is to revolutionize scientific communication through the
               integration of art and science by providing a platform that enables
@@ -42,9 +42,9 @@ const Footer = () => {
         {/* Second Column */}
         <div className="mb-6 md:mb-0">
           <div>
-            <h1 className="text-2xl mt-10 mb-2">QUICK LINK</h1>
+            <h1 className="text-2xl text-white mt-10 mb-2">QUICK LINK</h1>
           </div>
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col text-white gap-2">
             <ul>About</ul>
             <ul>Features</ul>
             <ul>Contact</ul>
@@ -55,14 +55,14 @@ const Footer = () => {
         {/* Third Column */}
         <div>
           <div>
-            <h1 className="text-2xl mt-10 mb-3">NEWS LETTER</h1>
+            <h1 className="text-2xl text-white mt-10 mb-3">NEWS LETTER</h1>
           </div>
-          <div className="max-w-xs text-sm">
+          <div className="max-w-xs text-white text-sm">
             <p>
               Subscribe to our newsletter to get our latest updates & news.
             </p>
           </div>
-          <div className="flex mt-5">
+          <div className="flex text-white mt-5">
             <input
               className="w-full max-w-sm pt-2 pb-2 pl-4 pr-10 rounded-md"
               type="text"
