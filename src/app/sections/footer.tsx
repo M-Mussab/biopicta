@@ -10,7 +10,7 @@ import Link from 'next/link';
 const Footer = () => {
   return (
     <>
-      <div className="flex flex-col md:flex-row md:justify-around justify-normal p-4">
+      <div className="flex bg-black flex-col md:flex-row md:justify-around justify-normal p-4">
         {/* First Column */}
         <div className="mb-6 md:mb-0">
           <div className="mt-10 mb-2">
