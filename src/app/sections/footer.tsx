@@ -79,7 +79,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="w-full h-0.5 bg-blac " ></div>
-      <h1 className='text-center mt-5 bg-black '>
+      <h1 className='text-center mt-5 bg-white '>
         <span className='bg-black text-white/30'>© 2025 Powered by </span>
         <Link className='font-bold text-white underline' href="https://kognifi.com">
           Kognifi
