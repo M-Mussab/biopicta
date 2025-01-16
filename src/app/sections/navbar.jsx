@@ -70,7 +70,7 @@ const Navbar = () => {
           <h1 className="text-black text-sm cursor-pointer hover:text-[#B7512C]">
             Blogs
           </h1>
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col mx-auto -translate-x-36 gap-4">
             {/* Sign Up Button */}
             <div className="flex items-center gap-2 bg-[#B7512C] text-white px-4 py-2 rounded-full shadow hover:bg-[#9c3e21] cursor-pointer">
               <Image
