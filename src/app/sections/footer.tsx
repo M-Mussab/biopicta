@@ -15,7 +15,7 @@ const Footer = () => {
         {/* First Column */}
         <div className="flex-1">
           <Image src={Biopicta} alt="Biopicta" className="mb-4" />
-          <p className="text-sm max-w-md">
+          <p className="text-sm max-w-sm">
             Our mission is to revolutionize scientific communication through the
             integration of art and science by providing a platform that enables
             scientists to create concise, high-quality, and informative
@@ -59,17 +59,17 @@ const Footer = () => {
 
         {/* Third Column */}
         <div className="flex-1">
-          <h2 className="text-xl font-semibold mb-4">Newsletter</h2>
-          <p className="text-sm mb-4">
+          <h2 className="text-xl font-semibold mb-1">Newsletter</h2>
+          <p className="text-sm max-w-xs mb-8">
             Subscribe to our newsletter to get our latest updates & news.
           </p>
           <div className="flex text-white mt-5">
             <input
-              className="w-full max-w-sm pt-2 pb-2 pl-4 pr-10 rounded-md"
+              className="w-full max-w-xs pt-2 pb-2 pl-4 pr-10 rounded-md"
               type="text"
               placeholder="Your email address"
             />
-            <div className="bg-[#2A5650] size-9 flex items-center justify-center rounded-md -translate-x-9 p-1 translate-y-[2px]">
+            <div className="bg-[#2A5650] size-9 flex items-center justify-center rounded-md -translate-x-10 p-1 translate-y-[2px]">
               <Image
                 className="items-center m-1 flex justify-center"
                 src={Arow}
@@ -86,7 +86,7 @@ const Footer = () => {
       {/* Footer Bottom Section */}
       <div className="text-center text-sm text-gray-400">
         <span>© 2025 Powered by </span>
-        <Link href="https://kognifi.vercel.app" className="text-white font-bold italic underline">
+        <Link href="https://kognifi.com" className="text-white font-bold italic underline">
           Kognifi
         </Link>
       </div>
@@ -95,5 +95,6 @@ const Footer = () => {
 };
 
 export default Footer;
+
 
 
