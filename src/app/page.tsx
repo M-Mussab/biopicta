@@ -8,6 +8,7 @@ import Hero from "@/app/sections/hero"
 export default function Home() {
   return (
     <>
+    <div className='bg-black text-white'>
       <Navbar/>
       <Hero/>
       <Logoticker/>
@@ -15,6 +16,7 @@ export default function Home() {
       <Tab/>
       <Control/>
       <Footer/>
+      </div>
     </>
   );
 }

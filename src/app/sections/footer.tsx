@@ -9,59 +9,60 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <>
-      <div className="flex bg-black flex-col md:flex-row md:justify-around justify-normal p-4">
+    <footer className="bg-black text-white p-6">
+      {/* Main Footer Section */}
+      <div className="flex flex-col md:flex-row md:justify-around gap-8">
         {/* First Column */}
-        <div className="mb-6 md:mb-0">
-          <div className="mt-10 mb-2">
-            <Image src={Biopicta} alt="Biopicta" />
-          </div>
-          <div className="max-w-sm text-white text-sm">
-            <p>
-              Our mission is to revolutionize scientific communication through the
-              integration of art and science by providing a platform that enables
-              scientists to create concise, high-quality, and informative
-              scientific illustrations with ease.
-            </p>
-          </div>
-          <div className="flex gap-6 mt-3">
-            <div>
-              <Image src={Facebook} alt="Facebook" />
-            </div>
-            <div className="bg-white h-4 w-[0.5px] mt-1"></div>
-            <div>
-              <Image src={Instagram} alt="Instagram" />
-            </div>
-            <div className="bg-white h-4 w-[0.5px] mt-1"></div>
-            <div>
-              <Image src={X} alt="x" />
-            </div>
+        <div className="flex-1">
+          <Image src={Biopicta} alt="Biopicta" className="mb-4" />
+          <p className="text-sm max-w-md">
+            Our mission is to revolutionize scientific communication through the
+            integration of art and science by providing a platform that enables
+            scientists to create concise, high-quality, and informative
+            scientific illustrations with ease.
+          </p>
+          <div className="flex items-center gap-4 mt-4">
+            <Image src={Facebook} alt="Facebook" className="cursor-pointer" />
+            <div className="h-4 w-[1px] bg-white"></div>
+            <Image src={Instagram} alt="Instagram" className="cursor-pointer" />
+            <div className="h-4 w-[1px] bg-white"></div>
+            <Image src={X} alt="X" className="cursor-pointer" />
           </div>
         </div>
 
         {/* Second Column */}
-        <div className="mb-6 md:mb-0">
-          <div>
-            <h1 className="text-2xl text-white mt-10 mb-2">QUICK LINK</h1>
-          </div>
-          <div className="flex flex-col text-white gap-2">
-            <ul>About</ul>
-            <ul>Features</ul>
-            <ul>Contact</ul>
-            <ul>Blog</ul>
-          </div>
+        <div className="flex-1">
+          <h2 className="text-xl font-semibold mb-4">Quick Links</h2>
+          <ul className="space-y-2">
+            <li>
+              <Link href="/about" className="hover:text-gray-400">
+                About
+              </Link>
+            </li>
+            <li>
+              <Link href="/features" className="hover:text-gray-400">
+                Features
+              </Link>
+            </li>
+            <li>
+              <Link href="/contact" className="hover:text-gray-400">
+                Contact
+              </Link>
+            </li>
+            <li>
+              <Link href="/blog" className="hover:text-gray-400">
+                Blog
+              </Link>
+            </li>
+          </ul>
         </div>
 
         {/* Third Column */}
-        <div>
-          <div>
-            <h1 className="text-2xl text-white mt-10 mb-3">NEWS LETTER</h1>
-          </div>
-          <div className="max-w-xs text-white text-sm">
-            <p>
-              Subscribe to our newsletter to get our latest updates & news.
-            </p>
-          </div>
+        <div className="flex-1">
+          <h2 className="text-xl font-semibold mb-4">Newsletter</h2>
+          <p className="text-sm mb-4">
+            Subscribe to our newsletter to get our latest updates & news.
+          </p>
           <div className="flex text-white mt-5">
             <input
               className="w-full max-w-sm pt-2 pb-2 pl-4 pr-10 rounded-md"
@@ -72,21 +73,27 @@ const Footer = () => {
               <Image
                 className="items-center m-1 flex justify-center"
                 src={Arow}
-                alt="Arow"
+                alt="Arrow"
               />
             </div>
           </div>
         </div>
       </div>
-      <div className="w-full h-0.5 bg-blac " ></div>
-      <h1 className='text-center mt-5 bg-white '>
-        <span className='bg-black text-white/30'>© 2025 Powered by </span>
-        <Link className='font-bold text-white underline' href="https://kognifi.com">
+
+      {/* Divider */}
+      <div className="w-full h-px my-6 bg-gray-600"></div>
+
+      {/* Footer Bottom Section */}
+      <div className="text-center text-sm text-gray-400">
+        <span>© 2025 Powered by </span>
+        <Link href="https://kognifi.vercel.app" className="text-white font-bold italic underline">
           Kognifi
         </Link>
-      </h1>
-    </>
+      </div>
+    </footer>
   );
 };
 
 export default Footer;
+
+
