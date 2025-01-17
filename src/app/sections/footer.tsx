@@ -86,7 +86,7 @@ const Footer = () => {
       {/* Footer Bottom Section */}
       <div className="text-center text-sm text-gray-400">
         <span>© 2025 Powered by </span>
-        <Link href="https://kognifi.com" className="text-white font-bold italic underline">
+        <Link href="https://kognifi.vercel.app" className="text-white font-bold italic underline">
           Kognifi
         </Link>
       </div>
