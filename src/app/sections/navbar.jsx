@@ -9,7 +9,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="mx-auto border-b  sticky top-0 z-10 border-gray-200 bg-white shadow-sm w-full py-4">
+    <div className="mx-auto border-b rounded-lg  sticky top-0 z-10 border-gray-200 bg-white shadow-sm w-full py-4">
       {/* Top Section */}
       <div className="flex justify-between items-center px-4">
         {/* Logo and Links */}

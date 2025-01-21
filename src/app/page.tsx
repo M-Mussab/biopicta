@@ -1,5 +1,4 @@
 import Logoticker from '@/app/sections/logoticker';
-import Navbar from '@/app/sections/navbar';
 import Feacture from '@/app/sections/feacture';
 import Control from '@/app/sections/control';
 import Footer from './sections/footer';
@@ -8,8 +7,7 @@ import Hero from "@/app/sections/hero"
 export default function Home() {
   return (
     <>
-    <div className='bg-black text-white'>
-      <Navbar/>
+    <div className='bg-black mx-auto max-w-screen-2xl text-white'>
       <Hero/>
       <Logoticker/>
       <Feacture/>
