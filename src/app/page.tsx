@@ -7,7 +7,7 @@ import Hero from "@/app/sections/hero"
 export default function Home() {
   return (
     <>
-    <div className='bg-black mx-auto max-w-screen-2xl text-white'>
+    <div className='bg-black text-white'>
       <Hero/>
       <Logoticker/>
       <Feacture/>
