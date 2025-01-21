@@ -7,8 +7,27 @@ const Hero = () => {
     <div className="bg-[#DFE6E5] max-sm:pt-12 flex flex-col lg:flex-row items-center justify-between ">
       <div className="max-w-lg text-center lg:text-left lg:pl-24 lg:pt-8  ">
         <h1 className="text-5xl font-bold mb-2  text-black">
-          Design Your Research Posters With <span className='text-5xl relative font-semibold bg-gradient-to-r from-[#2A5650]  to-[#5CBCAF] bg-clip-text text-transparent'>PosterPro
-            <sup className="text-sm bg-gradient-to-r absolute top-2 from-[#2A5650] to-[#5CBCAF] bg-clip-text text-transparent">TM</sup>
+          Design Your Research Posters With{' '}
+          <span
+            className="text-5xl relative font-semibold bg-gradient-to-r from-[#2A5650] to-[#5CBCAF] bg-clip-text text-transparent"
+            style={{
+              backgroundSize: '100%',
+              backgroundPosition: '0 0',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+            }}
+          >
+            PosterPro
+            <sup
+              className="text-sm absolute font-bold top-2 "
+              style={{
+                background: 'inherit', 
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+              }}
+            >
+              TM
+            </sup>
           </span>
         </h1>
         {/* <h2 className="">
@@ -16,7 +35,7 @@ const Hero = () => {
           <sup className="text-sm  bg-gradient-to-r from-[#2A5650] to-[#5CBCAF] bg-clip-text text-transparent">TM</sup>
         </h2> */}
 
-        <p className="text-gray-700 mt-4">
+        <p className="text-gray-700 mt-4 break-keep">
           Create professional Scientific Posters with pre-designed templates.
           Save time and get research posters with a few clicks.
         </p>
