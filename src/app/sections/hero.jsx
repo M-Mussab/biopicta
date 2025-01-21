@@ -4,9 +4,9 @@ import Header from '@/app/images/Header image.svg';
 
 const Hero = () => {
   return (
-    <div className="bg-[#DFE6E5] flex flex-col lg:flex-row items-center justify-between ">
-      <div className="max-w-lg text-center lg:text-left lg:pl-8 lg:pt-8  ">
-        <h1 className="text-5xl font-bold mb-2 tracking-wider text-black">
+    <div className="bg-[#DFE6E5] max-sm:pt-12 flex flex-col lg:flex-row items-center justify-between ">
+      <div className="max-w-lg text-center lg:text-left lg:pl-24 lg:pt-8  ">
+        <h1 className="text-5xl font-bold mb-2  text-black">
           Design Your Research Posters With <span className='text-5xl font-semibold bg-gradient-to-r from-[#2A5650] to-[#5CBCAF] bg-clip-text text-transparent'>PosterPro</span>
           <sup className="text-sm  bg-gradient-to-r from-[#2A5650] to-[#5CBCAF] bg-clip-text text-transparent">TM</sup>
         </h1>
@@ -25,7 +25,7 @@ const Hero = () => {
       </div>
       <div className="mt-8 lg:mt-0">
         <Image
-          className="w-[625px] h-[525px] object-contain"
+          className="w-[625px] lg:pl-8 object-contain"
           src={Header}
           alt="Header illustration for PosterPro"
         />
