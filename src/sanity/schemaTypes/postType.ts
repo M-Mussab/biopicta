@@ -106,7 +106,7 @@ export const postType = defineType({
     defineField({
       name: 'category',
       type: 'reference',
-      to: { type: 'category' }, // Single reference to a category
+      to: { type: 'category' }, 
     }),
     defineField({
       name: 'publishedAt',
