@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Biopicta from '@/app/images/biopicta.svg';
 import Contact from '@/app/images/contact.svg';
 import Contact2 from '@/app/images/contact2.svg';
+import Link from 'next/link';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,14 +15,17 @@ const Navbar = () => {
       <div className="flex justify-between items-center px-4">
         {/* Logo and Links */}
         <div className="flex items-center gap-6">
-          <Image src={Biopicta} alt="Biopicta Logo" width={120} height={40} />
+          <Link href="/" ><Image src={Biopicta} alt="Biopicta Logo" width={120} height={40} /></Link>
+          
           <div className="hidden md:flex gap-6">
             <h1 className="text-black text-sm cursor-pointer hover:text-[#B7512C]">
               Templates
             </h1>
+            <Link href="/blogs">
             <h1 className="text-black text-sm cursor-pointer hover:text-[#B7512C]">
               Blogs
             </h1>
+            </Link>
           </div>
         </div>
         {/* Buttons */}
