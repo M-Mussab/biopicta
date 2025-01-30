@@ -39,20 +39,10 @@ const Navbar = () => {
               height={20}
               className="rounded-full"
             />
-            <h1 className="text-sm font-medium">Sign Up</h1>
+            <h1 className="text-sm font-medium">Get Access</h1>
           </div>
 
-          {/* Sign In Button */}
-          <div className="flex items-center gap-2 border-2 border-[#B7512C] text-[#B7512C] px-4 py-2 rounded-full shadow hover:bg-[#f8f2f0] cursor-pointer">
-            <Image
-              src={Contact2}
-              alt="Sign In Icon"
-              width={20}
-              height={20}
-              className="rounded-full"
-            />
-            <h1 className="text-sm font-medium">Sign In</h1>
-          </div>
+      
         </div>
         {/* Burger Menu Icon */}
         <div
@@ -84,20 +74,10 @@ const Navbar = () => {
                 height={20}
                 className="rounded-full"
               />
-              <h1 className="text-sm font-medium">Sign Up</h1>
+              <h1 className="text-sm font-medium">Get Access</h1>
             </div>
 
-            {/* Sign In Button */}
-            <div className="flex items-center gap-2 border-2 border-[#B7512C] text-[#B7512C] px-4 py-2 rounded-full shadow hover:bg-[#f8f2f0] cursor-pointer">
-              <Image
-                src={Contact2}
-                alt="Sign In Icon"
-                width={20}
-                height={20}
-                className="rounded-full"
-              />
-              <h1 className="text-sm font-medium">Sign In</h1>
-            </div>
+
           </div>
         </div>
       )}

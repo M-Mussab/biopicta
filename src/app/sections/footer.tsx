@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <footer className="bg-black text-white p-6">
       {/* Main Footer Section */}
-      <div className="flex flex-col md:flex-row md:justify-around gap-8">
+      <div className="flex flex-col md:flex-row md:justify-between gap-8">
         {/* First Column */}
         <div className="flex-1">
           <Image src={Biopicta} alt="Biopicta" className="mb-4" />
@@ -30,7 +30,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Second Column */}
+        {/* Second Column
         <div className="flex-1">
           <h2 className="text-xl font-semibold mb-4">Quick Links</h2>
           <ul className="space-y-2">
@@ -55,7 +55,7 @@ const Footer = () => {
               </Link>
             </li>
           </ul>
-        </div>
+        </div> */}
 
         {/* Third Column */}
         <div className="flex-1">
