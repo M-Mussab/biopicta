@@ -29,9 +29,9 @@ function SegmentedDisplay({ value }: { value: string }) {
   const handleHoverOut = () => {
     gsap.to(valueRef.current, {
       scale: 1,
-      color: "#FFFFFF",
+      color: "#FFFFF",
       boxShadow: "none",
-      duration: 0.4,
+      duration: 0.3,
       ease: "power2.out",
     });
   };
@@ -109,12 +109,13 @@ export default function Time() {
 
   return (
     // Container with overflow-hidden to clip the marquee animation
-    <div className="w-full overflow-hidden py-4">
+    <div className="w-full overflow-hidden ">
       <div ref={marqueeRef} className="flex items-center gap-4">
 
-        <span className="text-2xl text-white font-semibold">
+        <span className="text-3xl font-semibold text-white  ">
           Launching Soon
         </span>
+
         <div className="flex items-center gap-4">
           <div className="flex flex-col items-center">
             <SegmentedDisplay value={timeLeft.days} />
@@ -132,13 +133,11 @@ export default function Time() {
             <SegmentedDisplay value={timeLeft.seconds} />
             <span className="text-white/80 text-sm mt-2">SECONDS</span>
           </div>
-          <span className="text-2xl text-white font-semibold">
-        We'll let you know when we are Launching
-        </span>
+
         </div>
       </div>
-      
+
     </div>
-    
+
   );
 }

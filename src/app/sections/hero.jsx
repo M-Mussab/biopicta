@@ -8,10 +8,6 @@ const Hero = () => {
   return (
     <div className="flex flex-col">
       {/* Full-width Time component at the top with same background color */}
-      <div className="w-full bg-[#DFE6E5]">
-        <Time />
-      </div>
-
       {/* Main hero content with the same background color */}
       <div className="bg-[#DFE6E5] max-sm:pt-12 flex flex-col lg:flex-row items-center justify-between">
         <div className="max-w-lg text-center lg:text-left lg:pl-24 lg:pt-8">
