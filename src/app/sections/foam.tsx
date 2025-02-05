@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import React, { useState } from "react";
 import { Send } from "lucide-react"; // Importing Send icon
 
 export default function ContactForm() {
@@ -41,17 +41,21 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen  bg-[#F5F5F5] px-4">
-      <div className="w-full max-w-lg text-center mb-6">
+    // Outer container: flex-col on small screens, flex-row on md and up.
+    <div className="flex flex-col md:flex-row items-center justify-center min-h-screen bg-[#F5F5F5] px-4 space-y-6 md:space-y-0 md:space-x-6">
+      {/* Header Section */}
+      <div className="w-full max-w-lg text-center">
         <h2 className="text-xl font-semibold text-gray-700">
           Get early access 🚀
         </h2>
         <p className="text-gray-600">
-          We're welcoming new members. Join us now! <br />
+          We're welcoming new members. Join us now!
+          <br />
           We'll bring you onboard soon!
         </p>
       </div>
 
+      {/* Contact Form Section */}
       <div className="w-full max-w-lg p-8 bg-white shadow-lg rounded-lg">
         <h1 className="text-2xl font-bold text-gray-700 text-center mb-6">
           Contact Us
