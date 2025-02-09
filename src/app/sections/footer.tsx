@@ -5,7 +5,6 @@ import Instagram from '@/app/images/instagram.svg';
 import X from '@/app/images/x.svg';
 import Arow from '@/app/images/arrow.svg';
 import Image from 'next/image';
-import Link from 'next/link';
 
 const Footer = () => {
   return (
@@ -53,27 +52,28 @@ const Footer = () => {
           <h2 className="text-xl font-semibold mb-4">Quick Links</h2>
           <ul className="space-y-2">
             <li>
-              <Link href="/about" className="hover:text-gray-400">
+              <a href="/about" className="hover:text-gray-400">
                 About
-              </Link>
+              </a>
             </li>
             <li>
-              <Link href="/features" className="hover:text-gray-400">
+              <a href="/features" className="hover:text-gray-400">
                 Features
-              </Link>
+              </a>
             </li>
             <li>
-              <Link href="/contact" className="hover:text-gray-400">
+              <a href="/contact" className="hover:text-gray-400">
                 Contact
-              </Link>
+              </a>
             </li>
             <li>
-              <Link href="/blog" className="hover:text-gray-400">
+              <a href="/blog" className="hover:text-gray-400">
                 Blog
-              </Link>
+              </a>
             </li>
           </ul>
-        </div> */}
+        </div>
+        */}
 
         {/* Third Column */}
         <div className="flex-1">
@@ -89,9 +89,9 @@ const Footer = () => {
             />
             <div className="bg-[#2A5650] size-9 flex items-center justify-center rounded-md -translate-x-10 p-1 translate-y-[2px]">
               <Image
-                className="items-center m-1 flex justify-center"
                 src={Arow}
                 alt="Arrow"
+                className="items-center m-1 flex justify-center"
               />
             </div>
           </div>
@@ -104,9 +104,14 @@ const Footer = () => {
       {/* Footer Bottom Section */}
       <div className="text-center text-sm text-gray-400">
         <span>© 2025 Powered by </span>
-        <Link href="https://kognifi.ai" className="text-white font-bold italic underline">
+        <a
+          href="https://kognifi.ai"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-white font-bold italic underline"
+        >
           Kognifi
-        </Link>
+        </a>
       </div>
     </footer>
   );
