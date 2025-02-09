@@ -1,10 +1,8 @@
 import React from 'react';
 import Biopicta from '@/app/images/biopicta.svg';
-
-import LinkedInIcon from '@/app/images/linkedin.svg';
+import Facebook from '@/app/images/facebook.svg';
 import Instagram from '@/app/images/instagram.svg';
 import X from '@/app/images/x.svg';
-
 import Arow from '@/app/images/arrow.svg';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -20,26 +18,18 @@ const Footer = () => {
           <p className="text-sm max-w-sm">
             Our mission is to revolutionize scientific communication through the
             integration of art and science by providing a platform that enables
-            scientists to create concise, high-quality, and informative scientific
-            illustrations with ease.
+            scientists to create concise, high-quality, and informative
+            scientific illustrations with ease.
           </p>
           <div className="flex items-center gap-4 mt-4">
-            {/* Removed Facebook anchor */}
             <a
-              href="https://www.linkedin.com/company/biopicta/?original_referer="
+              href="https://www.facebook.com/biopicta"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Image src={LinkedInIcon} alt="LinkedIn" className="cursor-pointer" />
+              <Image src={Facebook} alt="Facebook" className="cursor-pointer" />
             </a>
-            <a
-              href="https://twitter.com/biopicta"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image src={X} alt="X" className="cursor-pointer" />
-            </a>
-
+            <div className="h-4 w-[1px] bg-white"></div>
             <a
               href="https://www.instagram.com/bio.picta/"
               target="_blank"
@@ -47,10 +37,45 @@ const Footer = () => {
             >
               <Image src={Instagram} alt="Instagram" className="cursor-pointer" />
             </a>
+            <div className="h-4 w-[1px] bg-white"></div>
+            <a
+              href="https://twitter.com/biopicta"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image src={X} alt="Twitter" className="cursor-pointer" />
+            </a>
           </div>
         </div>
 
-        {/* Newsletter Column */}
+        {/* Second Column (Commented Out)
+        <div className="flex-1">
+          <h2 className="text-xl font-semibold mb-4">Quick Links</h2>
+          <ul className="space-y-2">
+            <li>
+              <Link href="/about" className="hover:text-gray-400">
+                About
+              </Link>
+            </li>
+            <li>
+              <Link href="/features" className="hover:text-gray-400">
+                Features
+              </Link>
+            </li>
+            <li>
+              <Link href="/contact" className="hover:text-gray-400">
+                Contact
+              </Link>
+            </li>
+            <li>
+              <Link href="/blog" className="hover:text-gray-400">
+                Blog
+              </Link>
+            </li>
+          </ul>
+        </div> */}
+
+        {/* Third Column */}
         <div className="flex-1">
           <h2 className="text-xl font-semibold mb-1">Newsletter</h2>
           <p className="text-sm max-w-xs mb-8">
@@ -79,12 +104,7 @@ const Footer = () => {
       {/* Footer Bottom Section */}
       <div className="text-center text-sm text-gray-400">
         <span>© 2025 Powered by </span>
-        <Link
-          href="https://kognifi.ai"
-          className="text-white font-bold italic underline"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <Link href="https://kognifi.ai" className="text-white font-bold italic underline">
           Kognifi
         </Link>
       </div>
