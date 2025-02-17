@@ -1,0 +1,19 @@
+version: "3"
+services:
+  app:
+    image: ghcr.io/M-Mussab/biopicta-ghcr:latest
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.Biopicta.rule=Host(Biopicta.com)"
+      - "traefik.http.routers.Biopicta.entrypoints=websecure"
+      - "traefik.http.services.Biopicta.loadbalancer.server.port=8009"
+      - "traefik.http.routers.Biopicta.tls=true"
+      - "traefik.http.routers.Biopicta.tls.certresolver=myresolver"
+    networks:
+      - traefik
+    pull_policy: always
+    command: ["next", "start"]
+
+networks:
+  traefik:
+    external: true
